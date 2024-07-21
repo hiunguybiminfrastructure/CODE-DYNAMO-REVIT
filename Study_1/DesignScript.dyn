@@ -1,0 +1,228 @@
+{
+  "Uuid": "92f3126c-ec34-4b26-b00c-e3e266676665",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "DesignScript",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "f = open(r\"D:\\CODE DYNAMO REVIT_PYTHON\\10_DYNAMO REVIT\\CODE-DYNAMO-REVIT\\Study_1\\DesignScript.py\", \"r\")\r\n\r\nOUT = f.read() ",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "95c29d68e3c74184925c22ecc2ba3527",
+      "Inputs": [
+        {
+          "Id": "52e332717efe4f7caab738d40d9c7b2a",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "98a35de41f8e4947b6866120f6296f1a",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded Python script."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonStringNode, PythonNodeModels",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "e215d4de597942d2969e0372ccb063d9",
+      "Inputs": [
+        {
+          "Id": "9ace437cd697465ea0df74b6415426e3",
+          "Name": "script",
+          "Description": "Python script to run.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "da1ade2c5d11441db2b59d2ec8b1e1d9",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3c6fbe0f4eb74048859051f4a3dc1e0c",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs a Python script from a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "99d3cb0be3c547a881f77ce9d0c625f8",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d8e2b7b76fe549849894f1c1c5e2b422",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "98a35de41f8e4947b6866120f6296f1a",
+      "End": "9ace437cd697465ea0df74b6415426e3",
+      "Id": "a55a3b400f8e41e2b5ced5c0f8385082",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d8e2b7b76fe549849894f1c1c5e2b422",
+      "End": "52e332717efe4f7caab738d40d9c7b2a",
+      "Id": "9703ef2c397245bfa1e7f18ad17be09e",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.13",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "2.0",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.13.1.3887",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Id": "95c29d68e3c74184925c22ecc2ba3527",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "Python Script",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": 39.257133728873384,
+        "Y": 178.0
+      },
+      {
+        "Id": "e215d4de597942d2969e0372ccb063d9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "Python Script From String",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": 359.81162583608466,
+        "Y": 230.02896537703703
+      },
+      {
+        "Id": "99d3cb0be3c547a881f77ce9d0c625f8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "Boolean",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": -222.67641318914764,
+        "Y": 368.74117049777618
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "135ac8ac582241b49308429545f9fa97",
+        "Title": "DesignScript",
+        "DescriptionText": "<Double click here to edit group description>",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "95c29d68e3c74184925c22ecc2ba3527",
+          "e215d4de597942d2969e0372ccb063d9",
+          "99d3cb0be3c547a881f77ce9d0c625f8"
+        ],
+        "HasNestedGroups": false,
+        "Left": -232.67641318914764,
+        "Top": 105.0,
+        "Width": 869.4880390252323,
+        "Height": 395.74117049777618,
+        "FontSize": 36.0,
+        "InitialTop": 178.0,
+        "InitialHeight": 352.74117049777618,
+        "TextblockHeight": 63.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 222.38783443559558,
+    "Y": 155.77350444018526,
+    "Zoom": 0.23684160408292565
+  }
+}

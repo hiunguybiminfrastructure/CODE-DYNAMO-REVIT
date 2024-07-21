@@ -1,1 +1,1 @@
-out = BIM CIM 
+OUT = 5 + 10
